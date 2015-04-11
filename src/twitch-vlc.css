@@ -1,0 +1,47 @@
+.twitch-vlc-parent .spinner {
+  display: none !important;
+}
+
+.twitch-vlc-container {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.twitch-vlc {
+  display: block;
+}
+
+.twitch-vlc-controls {
+  background: #333;
+  border-top: 1px solid #1c1c1c;
+  bottom: 0;
+  color: #fff;
+  display: none;
+  left: 0;
+  padding: 5px 10px;
+  position: absolute;
+  right: 0;
+}
+
+.twitch-vlc-container:hover .twitch-vlc-controls {
+  display: block;
+}
+
+.twitch-vlc-controls > * {
+  vertical-align: middle;
+}
+
+.twitch-vlc-controls > *:not(:last-child) {
+  margin-right: 20px;
+}
+
+.twitch-vlc-controls button {
+  background: none;
+  border: 1px solid transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.twitch-vlc-controls button:active {
+  color: #bbb;
+}

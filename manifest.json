@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Twitch.tv VLC",
+  "description": "Replaces the Twitch.tv Flash player with a VLC player.",
+  "version": "0.0.1",
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.twitch.tv/*"],
+      "css": ["twitch-vlc.css"],
+      "js": [
+        "jquery.min.js", "jquery.ba-resize.min.js", "jquery.fullscreen.min.js",
+        "twitch-vlc.js"
+      ]
+    }
+  ],
+
+  "permissions": [
+    "http://www.twitch.tv/*", "https://api.twitch.tv/*",
+    "http://usher.twitch.tv/*"
+  ]
+}
